@@ -1,0 +1,5 @@
+<select #formatSelector>
+  <option value="pdf">PDF</option>
+  <option value="excel">Excel</option>
+</select>
+<button (click)="downloadFile(formatSelector.value)">Download</button>

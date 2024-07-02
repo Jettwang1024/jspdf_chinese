@@ -1,0 +1,48 @@
+.aa{
+    font-size: x-large;
+    width:200px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+.center{
+    margin: 0 auto;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    
+  }
+
+  .delete_ {
+    color: rgb(224, 84, 84);
+    opacity: 1;
+    max-width: 2vw !important;
+    min-width: 2vw !important;
+    margin: -1.2vw -1.2vw;
+    background-color: transparent;
+  }
+  .delete 
+  {
+    background-color: transparent;
+    border-style: none;
+    color: red;
+    font-size: 20px;
+    display:none;
+    float: inline-end;
+    font: bold;
+    
+  }
+  .father{
+
+    &:hover .delete
+    {
+        display: block;
+    }
+  }
+  .edit {
+    display: block; /* 确保编辑框是块级元素，填满父容器 */
+    width: 100%;    /* 编辑框宽度填满其容器 */
+    margin: 0;      /* 取消可能的外边距 */
+    box-sizing: border-box; /* 边框和内边距包含在宽度内 */
+  }

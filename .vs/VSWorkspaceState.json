@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.angular",
+    "\\filesaver",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\@models",
+    "\\src\\app\\excel-pdf-test",
+    "\\src\\app\\pdf-test",
+    "\\src\\app\\test"
+  ],
+  "SelectedNode": "\\src\\app\\app.config.server.ts",
+  "PreviewInSolutionExplorer": false
+}

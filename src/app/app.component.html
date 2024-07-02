@@ -1,0 +1,26 @@
+
+<app-test></app-test>
+<app-pdf-test></app-pdf-test>
+<app-excel-pdf-test></app-excel-pdf-test>
+
+<button (click)="btnFn($event)">按下</button>
+<header>
+    <div class="aa">
+        <input #toinput (keyup.enter)="add(toinput.value); toinput.value=''" [placeholder]="placeho">
+    </div>
+</header>
+<section class="main" style="display: block;">
+    <div class="view aa">
+        <input id="toggle-all" class="class_toggle_all" type="checkbox" [checked]="check_all_BTN" (click)="select_all()">
+        <label for="toggle-all">全選/全不選</label>
+    </div>
+    <ul id="todoList" class="aa">
+        <li *ngFor="let item of todolist | async; let i = index" [class]="{edit: item.Editing}">
+            <div class="father" [class.completed]="item.Status">
+                <input [id]="'toggle-' + i" type="checkbox" [checked]="item.Status" (click)="Select_one(i)">
+                <label [attr.for]="'toggle-' + i" (dblclick)="edit(item)">{{ item.Thing }}</label>
+                <button (click)="delete(i)" class="delete">X</button>
+            </div>
+        </li>
+    </ul>
+</section>
